@@ -1,0 +1,22 @@
+h1{border: 2px solid tomato}
+ul{
+    border-width: 5px;
+    border-style: dotted;
+    border-color: dodgerblue;
+}
+
+li{
+    border-width: 2.5px;
+    border-style: dashed;
+    border-color: lightcoral;
+}
+p{
+    border-radius: 15px;
+    border-width: 2.5px;
+    border-style: solid;
+    border-color: darkmagenta;
+
+}
+body{
+    background-color: aquamarine;
+}
