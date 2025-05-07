@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+<head>
+     <title> Unidad 3 | Actividad 01 </title>
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+     <meta charset="utf-8"> 
+     <meta name="Autor" content="Andrea Romero García"> 
+     <meta name="Fecha" content="29 de Abril del 2025"> 
+     <meta name="Descripción" content="Hola mundo JavaScript"> 
+</head>
+
+<body>
+     <script> document.write("UPSLP");</script>
+     <h1> Unidad 3 | Actividad 03 :: Tema (JavaScript)</h1>
+     <script>
+          let opc=window.prompt("Elige una de las opciónes: \n 1.Suma\n 2.Resta\n 3.Multiplicación \n4.División");
+          let  val_1 = Number(window.prompt("Cual es el primer operando?"));
+          let  val_2 = Number(window.prompt("Cual es el segundo operando?"));
+
+          switch(opc){
+               case "1":
+                    document.write("<h3>Operación Suma</h3>");
+                    document.write("<code>" + val_1 + "+" + val_2 + "=" + (val_1 + val_2) + "</code>");
+                    break;
+               case "2":
+                    document.write("<h3>Operación Resta</h3>");
+                    document.write("<code>" + val_1 + "-" + val_2 + "=" + (val_1 - val_2) + "</code>");
+                    break;
+               case "3":
+                    document.write("<h3>Operación Multiplica</h3>");
+                    document.write("<code>" + val_1 + "*" + val_2 + "=" + (val_1 * val_2) + "</code>");
+                    break;
+               case "4":
+                    document.write("<h3>Operación Divide</h3>");
+                    document.write("<code>" + val_1 + "/" + val_2 + "=" + (val_1 / val_2) + "</code>");
+                    break;
+          }
+     </script>
+        
+</body>
+
+</html>
