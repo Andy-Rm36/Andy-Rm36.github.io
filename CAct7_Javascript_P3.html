@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Unidad 3 | Actividad 07</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Rubén Cárdenas Sánchez">
+    <meta name="Fecha" content="13 de mayo de 2025">
+    <meta name="Descripción" content="JavaScript">
+    <script src="Actividad_07.js"></script>
+</head>
+<body>
+    <h1>Unidad 3 | Actividad 07 : Tema (JavaScript)</h1>
+    <form class="form-horizontal" name="frmControles" action="#" method="post" onsubmit="funcionControles()">
+        <fieldset>
+            <legend>Controles</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="groupRadio">Elige el tamaño</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label for="groupRadio-0">
+                            <input type="radio" name="groupRadio" id="groupRadio-0" value="99" checked="checked">
+                            Combo pequeño
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="groupRadio-1">
+                            <input type="radio" name="groupRadio" id="groupRadio-1" value="129">
+                            Combo mediano
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="groupRadio-2">
+                            <input type="radio" name="groupRadio" id="groupRadio-2" value="159">
+                            Combo grande
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Ingredientes</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Selecciona ingredientes</label>
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <label for="queso">
+                            <input type="checkbox" name="ingredientes" id="queso" value="queso"> Queso
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="jamon">
+                            <input type="checkbox" name="ingredientes" id="jamon" value="jamon"> Jamón
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="tocino">
+                            <input type="checkbox" name="ingredientes" id="tocino" value="tocino"> Tocino
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="champinon">
+                            <input type="checkbox" name="ingredientes" id="champinon" value="champinon"> Champiñón
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="pepperoni">
+                            <input type="checkbox" name="ingredientes" id="pepperoni" value="pepperoni"> Pepperoni
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Complemento</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="complemento">Elige complemento</label>
+                <div class="col-md-4">
+                    <select name="complemento" id="complemento">
+                        <option value="ninguno">Ninguno</option>
+                        <option value="papas">Papas</option>
+                        <option value="ensalada">Ensalada</option>
+                        <option value="refresco">Refresco</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Bebidas</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Selecciona tu bebida</label>
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <label for="agua">
+                            <input type="checkbox" name="bebidas" id="agua" value="agua"> Agua
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="cafe">
+                            <input type="checkbox" name="bebidas" id="cafe" value="cafe"> Café
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="te">
+                            <input type="checkbox" name="bebidas" id="te" value="te"> Té
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="jugo">
+                            <input type="checkbox" name="bebidas" id="jugo" value="jugo"> Jugo de frutas
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="gaseosa">
+                            <input type="checkbox" name="bebidas" id="gaseosa" value="gaseosa"> Gaseosa
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Adiciones Especiales</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="groupCheck">Elige adiciones especiales</label>
+                <div class="col-md-4">
+                    <div class="checkbox">
+                        <label for="groupCheck-0">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-0" value="1"> Salsa Especial
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-1">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-1" value="2"> Extra Queso
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-2">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-2" value="3"> Aceitunas
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-3">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-3" value="4"> Jalapeños
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="groupCheck-4">
+                            <input type="checkbox" name="groupCheck" id="groupCheck-4" value="5"> Champiñones adicionales
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
