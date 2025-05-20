@@ -1,46 +1,51 @@
 <!DOCTYPE html>
-<html lang ="es">
-
+<html lang="es">
 <head>
-     <title> Unidad 3 | Actividad 01 </title>
+	<title> Unidad 3 | Actividad 03 </title>
      <link rel="icon" type="image/x-icon" href="favicon.ico">
      <meta charset="utf-8"> 
      <meta name="Autor" content="Andrea Romero García"> 
      <meta name="Fecha" content="29 de Abril del 2025"> 
-     <meta name="Descripción" content="Hola mundo JavaScript"> 
-     <style type="text/css">
-          table{border:1px solid #C5C5C5; border-collapse: collapse; width: 50%;}
-          th,td{text-aling:left; padding: 10px}
-          tr:nth-child(even{background-color: cyan;}
-          tr:hover{background-color: deeppink;}
-     </style>
+     <meta name="Descripción" content="JavaScript"> 
+
+
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 20px;
+      float: left;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 6px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #ccc;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+  </style>
 </head>
-
 <body>
-     <h1> Unidad 3 | Actividad 03.1 :: Tema (JavaScript)</h1>
-     <script>
-          let numTabla, numElementos;
-          do{
-               numElementos = windows.prompt("Cuantos elementos deseas calcular [1-10]: ");
-               numElementos = Number(numTabla);
-          }while(numTabla < 1 || numTabla >10);
+  <h1>Unidad 3 | Actividad 03-1 :: Tema (JavaScript)</h1>
 
-          do{
-               numElementos = windows.prompt("Cuantos elementos deseas mostrar [10-100]: ");
-               numElementos = Number(numTabla);
-          }while(numTabla < 10 || numTabla >100);
-
-          let i;
-          document.write("<table>");
-          document.write("<tr><th> No. </th><th> Suma </th><th> Multiplicación </th></tr>");
-          for(i=1; i<= numElementos; i++){
-               document.write("<tr><td>" + i + "</tr><td>" + numTabla + "+" + i + "=" + 
-               (numTabla +i) + "</tr><td>" + numTabla + "x" + i + "=" + (numTabla * i) +
-               "</td></tr>");
-          }
-          document.write("</table>");
-     </script>
-        
+  <script>
+    for (let tabla = 1; tabla <= 10; tabla++) {
+      document.write("<table>");
+      document.write("<caption>Tabla del " + tabla + "</caption>");
+      document.write("<tr><th>No.</th><th>Suma</th><th>Multiplica</th></tr>");
+      for (let i = 1; i <= 10; i++) {
+        let suma = tabla + i;
+        let multiplica = tabla * i;
+        document.write("<tr>");
+        document.write("<td>" + i + "</td><td>" + tabla + " + " + i + " = " + suma + "</td><td>" + tabla + " × " + i + " = " + multiplica + "</td>");
+        document.write("</tr>");
+      }
+      document.write("</table>");
+    }
+  </script>
 </body>
-
 </html>
